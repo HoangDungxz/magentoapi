@@ -43,7 +43,7 @@ interface LocationManagementInterface {
  /**
 	 * GET for Post api
 	 * @param array $param
-	 * @return arr
+	 * @return array
 	 */
 
  public function getStore(array $store);
