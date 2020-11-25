@@ -44,6 +44,12 @@ class LocationManagement{
 
 	}
 
+	public function getALLStore()
+	{
+		$collection = $this->_storeFactory->create()->getCollection();
+		return $collection->getData();
+	}
+
 	public function toFilterLike(String $field){
 		if (isset($this->_store[$field])) {
 			$this->_collection->addFieldToFilter($field, array('like' => '%'.$this->_store[$field].'%'));
