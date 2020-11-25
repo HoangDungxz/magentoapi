@@ -1,0 +1,3 @@
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_WebapiAsync:etc/webapi_async.xsd">
+	<route url="V1/aht-storelocation/get" method="GET" alias="getstore" />
+</services>
