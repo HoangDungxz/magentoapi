@@ -6,16 +6,17 @@ interface LocationManagementInterface {
 
   /**
      Lấy key của admin Role Administrators hoặc admin có Role Rources Store Locator->Get Stores
+     METHOD post
    http://127.0.0.1/magento/rest/V1/integration/admin/token?username=admin&password=pass
 
      - Để lấy toàn bộ store
-
+   METHOD GET
    http://127.0.0.1/magento/rest/getallstore/
 
      - Tạo API để lấy về các store được lưu trong bảng của extension StoreLocator (10 kết quả), truyền thêm param để lấy thêm cho các page khác (p=2, p=3...)
 
           + store[page] = Số trang;
-
+   METHOD GET
           http://127.0.0.1/magento/rest/getstore/?store[page]=1
 
        - Lấy về các stores dựa theo các params truyền lên (country, state, city, zipcode)
