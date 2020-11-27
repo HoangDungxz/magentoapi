@@ -2,14 +2,14 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
 	
 	<route method="GET" url="/V1/aht-storelocation/get/">
-		<service class="AHT\StoreLocator\Api\LocationManagementInterface" method="getStore"/>
+		<service class="AHT\StoreLocator\Api\StoreApiRepositoryInterface" method="getStore"/>
 		<resources>
 			<resource ref="AHT_StoreLocator::getstore"/>
 		</resources>
 	</route>	
 
 	<route method="GET" url="/V1/aht-storelocation/getall/">
-		<service class="AHT\StoreLocator\Api\LocationManagementInterface" method="getALLStore"/>
+		<service class="AHT\StoreLocator\Api\StoreApiRepositoryInterface" method="getALLStore"/>
 		<resources>
 			<resource ref="AHT_StoreLocator::getstore"/>
 		</resources>
